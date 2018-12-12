@@ -48,7 +48,7 @@ install:
 script:
   - export MKL_THREADING_LAYER="GNU"
   # run keras backend init to initialize backend config
-  - python -c "import keras.backend"
+  - python -c "import tensorflow.keras.backend"
   # set up keras backend
   - sed -i -e 's/"backend":[[:space:]]*"[^"]*/"backend":\ "'$KERAS_BACKEND'/g' ~/.keras/keras.json;
   - echo -e "Running tests with the following config:\n$(cat ~/.keras/keras.json)"

@@ -1,7 +1,7 @@
-from keras.layers.core import Dropout, Flatten
-from keras.layers.convolutional import MaxPooling2D, Conv2D
-from keras.models import Model
-from keras.layers import Input, Dense
+from tensorflow.keras.layers import Dropout, Flatten
+from tensorflow.keras.layers import MaxPooling2D, Conv2D
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, Dense
 
 FRAME_H = 70
 FRAME_W = 180
